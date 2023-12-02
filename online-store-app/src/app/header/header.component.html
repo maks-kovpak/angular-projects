@@ -1,0 +1,13 @@
+<!-- header.component.html -->
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <a routerLink="/" class="logo">Website</a>
+    <span class="spacer"></span>
+    <div class="items">
+      <a href="">Products</a>
+      <a [routerLink]="auth.isLogged() ? ['profile'] : ['login']">
+        {{ auth.isLogged() ? 'Profile' : 'Login'}}
+      </a>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>

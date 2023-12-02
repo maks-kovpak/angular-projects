@@ -1,0 +1,14 @@
+.items {
+  display: flex;
+  gap: 1rem;
+}
+
+.items a,
+.logo {
+  color: white;
+}
+
+.items a:hover,
+.logo {
+  color: whitesmoke;
+}
